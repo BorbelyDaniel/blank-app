@@ -19,4 +19,4 @@ user_input = st.text_area("Enter text to classify:")
 
 if st.button("Predict"):
     preds = model.predict(embed_model.predict(np.array([le.transform(user_input.split(" ")[:20])])).reshape(1, -1)) 
-    st.success(f"Prediction: Black:{preds[0]] Draw:{preds[1]} White:{preds[2]}")
+    st.success(f"Prediction: Black:{preds[0]} Draw:{preds[1]} White:{preds[2]}")
