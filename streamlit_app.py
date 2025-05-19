@@ -6,9 +6,9 @@ import tensorflow as tf
 @st.cache_resource
 def load_models():
     # loads your serialized artifacts
-    le = joblib.load("models/labelencoder")
-    embed_model = joblib.load("models/embedmodel")
-    keras_model = tf.keras.models.load_model("models/model.keras")
+    le = joblib.load("labelencoder")
+    embed_model = joblib.load("embedmodel")
+    keras_model = tf.keras.models.load_model("model.keras")
     return le, embed_model, keras_model
 
 le, embed_model, keras_model = load_models()
