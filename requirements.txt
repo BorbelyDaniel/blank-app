@@ -1,1 +1,6 @@
 streamlit
+scikit-learn
+joblib
+tensorflow>=2.0
+numpy
+# plus any embedding library if your embedmodel needs it
